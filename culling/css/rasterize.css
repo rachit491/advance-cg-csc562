@@ -1,0 +1,27 @@
+#myWebGLCanvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background: black;
+}
+
+#heads-up-display {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	width: 100px;
+	height: 25px;
+	padding: 5px;
+	background: green;
+	color: white;
+	font-size: 12px;
+}
+
+#radioButton {
+	position: relative;
+	top: 550px;
+	width: 200px;
+	height: 100px;
+}

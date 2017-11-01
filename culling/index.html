@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prog 2 - Culling - Rachit Shrivastava</title>
+    
+    <link type="text/css" rel="stylesheet" href="css/rasterize.css">
+
+    <script type="text/javascript" src="scripts/lib/gl-matrix.js"></script>
+    <script type="text/javascript" src="scripts/lib/webgl-obj-loader.js"></script>
+    <script type="text/javascript" src="scripts/collisionDetection.js"></script>
+    <script type="text/javascript" src="scripts/plane.js"></script>
+    <script type="text/javascript" src="scripts/frustum.js"></script>
+    <script type="text/javascript" src="scripts/rasterize.js"></script>
+  </head>
+
+  <body onload="main()">
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+    <div id="radioButton">
+        <input type="radio" name="culling" value="none" checked="checked" onclick="setCullingType(0)"> 
+            <label>None</label><br>
+        <input type="radio" name="culling" value="frustum" onclick="setCullingType(1)">
+            <label>Frustum Culling</label><br>
+        <input type="radio" name="culling" value="portal" onclick="setCullingType(2)">
+            <label>Portal Culling</label><br><br>
+        <input type="checkbox" id="models" name="3dModels">
+            <label>Extra 3D Model</label><br>
+    </div>
+
+    <div id="heads-up-display">
+      <div id="frameRate"></div>
+      <div id="triangles-rendered"></div>
+    </div>
+
+  </body>
+</html>
